@@ -4,15 +4,29 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class Set_First {
+	/*
+	 * Set - cannot contain duplicate element
+	 * 
+	 * HashSet - 
+	 * - insertion order is not maintained
+	 * - no duplicates are allowed in hashSet
+	 * - only  1 null values are allowed
+	 * - initial cap. is 16 and load factor is 0.75
+	 * - hashSet is used to maintain uniqueness
+	 * - it add elements on the basis of hashCode (if hashcode is diff. then it will only add)
+	 * 
+	 * Internal Working - 
+	 * - 1st it will check hashcode and then equalness by .equals()
+	 * - if hashcode is same then it will check .equals()
+	 * - if hashcode is diff. then it will not check .equals() directly add element
+	 * */
+
 
 	public static void main(String[] args) {
 		
 		/**
 		 * SET=> HashSet, LinkedHashSet, TreeSet
 		 */
-		
-		// HashSet Does not Maintain Insertion Order.
-		// Initial Capacity 16, Default Load factor 0.75
 		
 		
 		Set<Integer> set=new HashSet<Integer>();
