@@ -1,0 +1,45 @@
+package set_interface;
+
+import java.util.LinkedHashSet;
+import java.util.Set;
+
+public class LinkedHashSet_1 {
+
+	/*
+	 * LinkedHashSet - - insertion order is maintained - still random access is not
+	 * possible - but we can access 1st & last element. by creating reference. of child
+	 * instead of Polymorphic object. - initial cap. is 16 & load factor is 0.75 - no
+	 * duplicates allowed
+	 * 
+	 * 
+	 * -
+	 */
+
+	public static void main(String[] args) {
+		LinkedHashSet<Integer> set = new LinkedHashSet<>();
+
+		set.add(1);
+		set.add(2);
+		set.add(3);
+		set.add(5);
+		set.add(8);
+		set.add(null);
+		set.add(null);
+		
+		System.out.println(set);
+
+		System.out.println(set.getFirst()); // access due to child class reff. instead of polymorphic obj.
+		System.out.println(set.getLast());
+
+		Set<String> link = new LinkedHashSet<String>();
+
+		link.add("viraj");
+		link.add("akash");
+		link.add("viraj");
+		link.add("shubham");
+
+		System.out.println(link);
+
+	}
+
+}
