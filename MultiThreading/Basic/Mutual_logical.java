@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class Synchronized_block2 {
+public class Mutual_logical {
 
 	public static void main(String[] args) {
 		Student_Utilizer util=new Student_Utilizer();
